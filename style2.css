@@ -1,0 +1,112 @@
+h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: bold;
+    padding-top: 10px;
+}
+p{
+    text-align: center;
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: bold;
+    margin-left:30px ;
+    margin-right: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3rem;
+    justify-items: center; /*to make grid in centre of page*/
+}
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: rgb(192, 191, 191);
+    width: 320px;
+    margin-top: 30px;
+}
+.box:hover{
+    box-shadow: 15px 15px 30px;
+}
+.grid a {
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: bold;
+    color: black;
+    padding: 4px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.grid a:hover {
+    background-color: black;
+    border: 2px black;
+    border-radius: 20px;
+    color: white;
+}
+.grid img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.welcome::before{
+    content: "";
+    background: url('https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg') center center/cover;
+    position: absolute;
+    height: 820px;
+    width: 99.1%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.contact-box{
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.contact-box::before {
+    content: "";
+    position: absolute;
+    background: url('feedback.jpg');
+    height: 200px;
+    width: 99%;
+    z-index: -1;
+    opacity: 0.8;
+    margin-top: 8px;
+}
+.contact-box input {
+    width: 40%;
+    padding: 2px;
+    border-radius: 10px;
+    font-size:1.3rem;
+}
+.contact-box label {  
+    font-size: 25px;
+    font-family: 'cursive';
+}
+#form{
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+}
+#submit{
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100px;
+    padding: 4px;
+    font-family: cursive;
+    margin-top: 10px;
+    font-size: 17px;
+}
+#submit:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
